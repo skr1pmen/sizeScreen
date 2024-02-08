@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    width: 100%;
+}
+
+.pointer_coarse,
+.pointer_fine,
+.pointer_none,
+.hover_hover,
+.hover_none,
+.any-hover_hover,
+.any-hover_on-demand,
+.any-hover_none,
+.any-pointer_coarse,
+.any-pointer_fine,
+.any-pointer_none {
+    display: none;
+}
+
+@media (pointer: coarse) {
+    .pointer_coarse {
+        display: block;
+    }
+}
+
+@media (pointer: fine) {
+    .pointer_coarse {
+        display: block;
+    }
+}
+
+@media (pointer: none) {
+    .pointer_coarse {
+        display: block;
+    }
+}
+
+@media (hover: hover) {
+    .pointer_coarse {
+        display: block;
+    }
+}
+
+@media (hover: none) {
+    .pointer_coarse {
+        display: block;
+    }
+}
+
+@media (any-hover: hover) {
+    .pointer_coarse {
+        display: block;
+    }
+}
+
+@media (any-hover: on-demand) {
+    .pointer_coarse {
+        display: block;
+    }
+}
+
+@media (any-hover: none) {
+    .pointer_coarse {
+        display: block;
+    }
+}
+
+@media (any-pointer: coarse) {
+    .pointer_coarse {
+        display: block;
+    }
+}
+
+@media (any-pointer: fine) {
+    .pointer_coarse {
+        display: block;
+    }
+}
+
+@media (any-pointer: none) {
+    .pointer_coarse {
+        display: block;
+    }
+}
