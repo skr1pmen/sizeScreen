@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Screen Sizer</title>
 </head>
-<body style="display: flex; justify-content: center; align-items: center; height: 100svh; width: 100%;">
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100svh; width: 100%;">
     <h1 class="size"></h1>
+    <span class="oscpu"></span>
     <script>
         const size = document.querySelector(".size");
         const sizeWindow = () =>{
@@ -15,6 +16,7 @@
         };
         window.addEventListener("resize", sizeWindow);
         window.addEventListener("load", sizeWindow);
+        document.querySelector(".oscpu").textContent = window.navigator.platform;
     </script>
 </body>
 </html>
