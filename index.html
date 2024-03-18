@@ -8,19 +8,24 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 class="size"></h1>
+    <div class="container">
+        <div class="content">
+            <h1 class="size"></h1>
+        </div>
+    </div>
 
 
     <script>
         const size = document.querySelector(".size");
-        const sizeWindow = () =>{
-            let width = window.screen.availWidth;
-            let height = window.screen.availHeight;
-            size.textContent = width + "x" + height;
+        const checkSize = () => {
+            let width = window.screen.availWidth,
+                height = window.screen.availHeight,
+                widthContainer = document.querySelector(".container").offsetWidth
+
+            size.textContent = `${width} x ${height} (${widthContainer}px)`;
         };
-        window.addEventListener("resize", sizeWindow);
-        window.addEventListener("load", sizeWindow);
-        document.querySelector(".oscpu").textContent = window.navigator.platform;
+        window.addEventListener("resize", checkSize);
+        window.addEventListener("load", checkSize);
     </script>
 </body>
 </html>

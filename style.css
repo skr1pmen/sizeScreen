@@ -1,93 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
-body {
+.content {
+    width: 100%;
+    height: 100svh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100svh;
-    width: 100%;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
 }
 
-.pointer_coarse,
-.pointer_fine,
-.pointer_none,
-.hover_hover,
-.hover_none,
-.any-hover_hover,
-.any-hover_on-demand,
-.any-hover_none,
-.any-pointer_coarse,
-.any-pointer_fine,
-.any-pointer_none {
-    display: none;
-}
-
-@media (pointer: coarse) {
-    .pointer_coarse {
-        display: block;
-    }
-}
-
-@media (pointer: fine) {
-    .pointer_coarse {
-        display: block;
-    }
-}
-
-@media (pointer: none) {
-    .pointer_coarse {
-        display: block;
-    }
-}
-
-@media (hover: hover) {
-    .pointer_coarse {
-        display: block;
-    }
-}
-
-@media (hover: none) {
-    .pointer_coarse {
-        display: block;
-    }
-}
-
-@media (any-hover: hover) {
-    .pointer_coarse {
-        display: block;
-    }
-}
-
-@media (any-hover: on-demand) {
-    .pointer_coarse {
-        display: block;
-    }
-}
-
-@media (any-hover: none) {
-    .pointer_coarse {
-        display: block;
-    }
-}
-
-@media (any-pointer: coarse) {
-    .pointer_coarse {
-        display: block;
-    }
-}
-
-@media (any-pointer: fine) {
-    .pointer_coarse {
-        display: block;
-    }
-}
-
-@media (any-pointer: none) {
-    .pointer_coarse {
-        display: block;
-    }
+.container {
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
