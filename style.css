@@ -5,7 +5,6 @@
     overflow: hidden;
     scroll-behavior: smooth;
 }
-
 .content {
     width: 100%;
     height: 100svh;
@@ -20,6 +19,17 @@
     width: 1200px;
     max-width: 95%;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
+}
+
+.title {
+    font-size: clamp(1.125rem, 0.08rem + 5.23vw, 4rem);
+    text-shadow: -2px -2px 0 #FB01FC, 2px 2px 0 #04FBF6;
+    color: #000;
+}
+
+.size {
+    font-size: clamp(0.875rem, 0.17rem + 3.52vw, 2.813rem);
+
 }
